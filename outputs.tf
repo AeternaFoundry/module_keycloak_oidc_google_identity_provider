@@ -1,122 +1,122 @@
 output "oidc_google_identity_providers_id" {
-  description = "Map of id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no id are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.id if v.id != null && length(v.id) > 0 }
+  description = "Map of id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.id }
 }
 output "oidc_google_identity_providers_accepts_prompt_none_forward_from_client" {
-  description = "Map of accepts_prompt_none_forward_from_client values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no accepts_prompt_none_forward_from_client are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.accepts_prompt_none_forward_from_client if v.accepts_prompt_none_forward_from_client != null }
+  description = "Map of accepts_prompt_none_forward_from_client values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.accepts_prompt_none_forward_from_client }
 }
 output "oidc_google_identity_providers_add_read_token_role_on_create" {
-  description = "Map of add_read_token_role_on_create values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no add_read_token_role_on_create are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.add_read_token_role_on_create if v.add_read_token_role_on_create != null }
+  description = "Map of add_read_token_role_on_create values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.add_read_token_role_on_create }
 }
 output "oidc_google_identity_providers_alias" {
-  description = "Map of alias values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no alias are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.alias if v.alias != null && length(v.alias) > 0 }
+  description = "Map of alias values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.alias }
 }
 output "oidc_google_identity_providers_authenticate_by_default" {
-  description = "Map of authenticate_by_default values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no authenticate_by_default are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.authenticate_by_default if v.authenticate_by_default != null }
+  description = "Map of authenticate_by_default values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.authenticate_by_default }
 }
 output "oidc_google_identity_providers_client_id" {
-  description = "Map of client_id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no client_id are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.client_id if v.client_id != null && length(v.client_id) > 0 }
+  description = "Map of client_id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.client_id }
 }
 output "oidc_google_identity_providers_client_secret" {
-  description = "Map of client_secret values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no client_secret are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.client_secret if v.client_secret != null && length(v.client_secret) > 0 }
+  description = "Map of client_secret values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.client_secret }
   sensitive   = true
 }
 output "oidc_google_identity_providers_default_scopes" {
-  description = "Map of default_scopes values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no default_scopes are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.default_scopes if v.default_scopes != null && length(v.default_scopes) > 0 }
+  description = "Map of default_scopes values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.default_scopes }
 }
 output "oidc_google_identity_providers_disable_user_info" {
-  description = "Map of disable_user_info values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no disable_user_info are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.disable_user_info if v.disable_user_info != null }
+  description = "Map of disable_user_info values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.disable_user_info }
 }
 output "oidc_google_identity_providers_display_name" {
-  description = "Map of display_name values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no display_name are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.display_name if v.display_name != null && length(v.display_name) > 0 }
+  description = "Map of display_name values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.display_name }
 }
 output "oidc_google_identity_providers_enabled" {
-  description = "Map of enabled values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no enabled are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.enabled if v.enabled != null }
+  description = "Map of enabled values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.enabled }
 }
 output "oidc_google_identity_providers_extra_config" {
-  description = "Map of extra_config values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no extra_config are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.extra_config if v.extra_config != null && length(v.extra_config) > 0 }
+  description = "Map of extra_config values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.extra_config }
 }
 output "oidc_google_identity_providers_first_broker_login_flow_alias" {
-  description = "Map of first_broker_login_flow_alias values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no first_broker_login_flow_alias are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.first_broker_login_flow_alias if v.first_broker_login_flow_alias != null && length(v.first_broker_login_flow_alias) > 0 }
+  description = "Map of first_broker_login_flow_alias values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.first_broker_login_flow_alias }
 }
 output "oidc_google_identity_providers_gui_order" {
-  description = "Map of gui_order values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no gui_order are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.gui_order if v.gui_order != null && length(v.gui_order) > 0 }
+  description = "Map of gui_order values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.gui_order }
 }
 output "oidc_google_identity_providers_hide_on_login_page" {
-  description = "Map of hide_on_login_page values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no hide_on_login_page are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.hide_on_login_page if v.hide_on_login_page != null }
+  description = "Map of hide_on_login_page values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.hide_on_login_page }
 }
 output "oidc_google_identity_providers_hosted_domain" {
-  description = "Map of hosted_domain values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no hosted_domain are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.hosted_domain if v.hosted_domain != null && length(v.hosted_domain) > 0 }
+  description = "Map of hosted_domain values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.hosted_domain }
 }
 output "oidc_google_identity_providers_internal_id" {
-  description = "Map of internal_id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no internal_id are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.internal_id if v.internal_id != null && length(v.internal_id) > 0 }
+  description = "Map of internal_id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.internal_id }
 }
 output "oidc_google_identity_providers_link_only" {
-  description = "Map of link_only values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no link_only are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.link_only if v.link_only != null }
+  description = "Map of link_only values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.link_only }
 }
 output "oidc_google_identity_providers_login_hint" {
-  description = "Map of login_hint values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no login_hint are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.login_hint if v.login_hint != null && length(v.login_hint) > 0 }
+  description = "Map of login_hint values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.login_hint }
 }
 output "oidc_google_identity_providers_org_domain" {
-  description = "Map of org_domain values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no org_domain are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.org_domain if v.org_domain != null && length(v.org_domain) > 0 }
+  description = "Map of org_domain values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.org_domain }
 }
 output "oidc_google_identity_providers_org_redirect_mode_email_matches" {
-  description = "Map of org_redirect_mode_email_matches values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no org_redirect_mode_email_matches are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.org_redirect_mode_email_matches if v.org_redirect_mode_email_matches != null }
+  description = "Map of org_redirect_mode_email_matches values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.org_redirect_mode_email_matches }
 }
 output "oidc_google_identity_providers_organization_id" {
-  description = "Map of organization_id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no organization_id are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.organization_id if v.organization_id != null && length(v.organization_id) > 0 }
+  description = "Map of organization_id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.organization_id }
 }
 output "oidc_google_identity_providers_post_broker_login_flow_alias" {
-  description = "Map of post_broker_login_flow_alias values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no post_broker_login_flow_alias are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.post_broker_login_flow_alias if v.post_broker_login_flow_alias != null && length(v.post_broker_login_flow_alias) > 0 }
+  description = "Map of post_broker_login_flow_alias values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.post_broker_login_flow_alias }
 }
 output "oidc_google_identity_providers_provider_id" {
-  description = "Map of provider_id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no provider_id are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.provider_id if v.provider_id != null && length(v.provider_id) > 0 }
+  description = "Map of provider_id values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.provider_id }
 }
 output "oidc_google_identity_providers_realm" {
-  description = "Map of realm values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no realm are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.realm if v.realm != null && length(v.realm) > 0 }
+  description = "Map of realm values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.realm }
 }
 output "oidc_google_identity_providers_request_refresh_token" {
-  description = "Map of request_refresh_token values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no request_refresh_token are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.request_refresh_token if v.request_refresh_token != null }
+  description = "Map of request_refresh_token values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.request_refresh_token }
 }
 output "oidc_google_identity_providers_store_token" {
-  description = "Map of store_token values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no store_token are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.store_token if v.store_token != null }
+  description = "Map of store_token values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.store_token }
 }
 output "oidc_google_identity_providers_sync_mode" {
-  description = "Map of sync_mode values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no sync_mode are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.sync_mode if v.sync_mode != null && length(v.sync_mode) > 0 }
+  description = "Map of sync_mode values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.sync_mode }
 }
 output "oidc_google_identity_providers_trust_email" {
-  description = "Map of trust_email values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no trust_email are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.trust_email if v.trust_email != null }
+  description = "Map of trust_email values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.trust_email }
 }
 output "oidc_google_identity_providers_use_user_ip_param" {
-  description = "Map of use_user_ip_param values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers except keys with no use_user_ip_param are omitted"
-  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.use_user_ip_param if v.use_user_ip_param != null }
+  description = "Map of use_user_ip_param values across all oidc_google_identity_providers, keyed the same as var.oidc_google_identity_providers"
+  value       = { for k, v in keycloak_oidc_google_identity_provider.oidc_google_identity_providers : k => v.use_user_ip_param }
 }
 
